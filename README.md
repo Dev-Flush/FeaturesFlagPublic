@@ -1,3 +1,7 @@
+### NPM Package
+
+Npm link for the package [FeatureFlags](https://www.npmjs.com/package/@shiv4nk4r/feature-flags).
+
 ### Docker Compose File
 
 ```yaml
