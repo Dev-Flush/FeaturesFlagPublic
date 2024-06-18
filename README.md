@@ -1,6 +1,6 @@
 # Documentation
 
-> The communication with the server is fully encrypted using the keys that can be automamatically generated or entered manually when registering an app with the application.
+> The communication with the server is fully encrypted using the keys that can be automatically generated or entered manually when registering an app with the application.
 
 How to install and use the feature flags app from dev flush
 
@@ -58,7 +58,7 @@ Now this was the first half of the installation now you are required to actually
 
 ### NPM Package
 
-First steps install the npm packafge from the link below in your app
+First steps install the npm package from the link below in your app
 
 Npm link for the package [FeatureFlags](https://www.npmjs.com/package/@shiv4nk4r/feature-flags).
 
@@ -75,25 +75,22 @@ const flags = new DevFlushFeatureFlags(
 
 Now there are 3 functions which are exposed from the package you can call them as.
 
-1. `getFlag()` - this function is used to fetch the flag that you pass default value is null for all flags
+1. `getFlag()` - this function is used to fetch the flag that you pass default value is null for all flags, returns a promise which resolves the value
 
 ```ts
 flags.getFlag("addUser").then((value: boolean) => {});
-);
 ```
 
 2. `getAllFlags` - this function gives you all the flags present for the app
 
 ```ts
 flags.getAllFlagsA("addUser").then((values:{name:string, value:boolean}[]) => {});
-);
 ```
 
 3. `getApp` - returns the app data which is registered
 
 ```ts
 flags.getApp("addUser").then((value: {app: object, flags: object[]}) => {});
-);
 ```
 
-Now your are set to use these flags to drive your components/features of your app.
+Now your are set to use the app.
